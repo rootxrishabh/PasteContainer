@@ -1,0 +1,71 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "001.20230820175154",
+      "schemaName": "pastebin",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "001.20230820175154",
+          "description": "rootxrishabh",
+          "type": "SQL",
+          "filepath": "/Users/rootxrishabh/PasteContainer/db/migrations/V001_20230820175154__rootxrishabh.sql",
+          "executionTime": 31
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.21.1",
+      "database": "pastebinclone",
+      "warnings": [
+        "outOfOrder mode is active. Migration of schema \"pastebin\" may not be reproducible."
+      ],
+      "timestamp": "2023-08-21T00:38:33.548275",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "pastebinclone",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.21.1",
+      "database": "pastebinclone",
+      "warnings": [
+        "outOfOrder mode is active. Migration of schema \"pastebinclone\" may not be reproducible."
+      ],
+      "timestamp": "2023-08-21T00:55:18.505011",
+      "operation": "migrate",
+      "exception": "Migration V001_20230820175154__rootxrishabh.sql failed\n------------------------------------------------------\nSQL State  : 42883\nError Code : 0\nMessage    : ERROR: function uuid_generate_v4() does not exist\n  Hint: No function matches the given name and argument types. You might need to add explicit type casts.\n  Position: 49\nLocation   : migrations/V001_20230820175154__rootxrishabh.sql (/Users/rootxrishabh/PasteContainer/db/migrations/V001_20230820175154__rootxrishabh.sql)\nLine       : 4\nStatement  : CREATE TABLE Pastes (\n\tid uuid NOT NULL DEFAULT uuid_generate_v4(),\n\tcreated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n\tupdated_at TIMESTAMP DEFAULT NULL,\n\tdeleted_at TIMESTAMP DEFAULT NULL,\n\tbody VARCHAR,\n\tname VARCHAR(20),\n\tPRIMARY KEY (id)\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "error": {
+        "errorCode": "FAILED_VERSIONED_MIGRATION",
+        "message": "Migration V001_20230820175154__rootxrishabh.sql failed\n------------------------------------------------------\nSQL State  : 42883\nError Code : 0\nMessage    : ERROR: function uuid_generate_v4() does not exist\n  Hint: No function matches the given name and argument types. You might need to add explicit type casts.\n  Position: 49\nLocation   : migrations/V001_20230820175154__rootxrishabh.sql (/Users/rootxrishabh/PasteContainer/db/migrations/V001_20230820175154__rootxrishabh.sql)\nLine       : 4\nStatement  : CREATE TABLE Pastes (\n\tid uuid NOT NULL DEFAULT uuid_generate_v4(),\n\tcreated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n\tupdated_at TIMESTAMP DEFAULT NULL,\n\tdeleted_at TIMESTAMP DEFAULT NULL,\n\tbody VARCHAR,\n\tname VARCHAR(20),\n\tPRIMARY KEY (id)\n)\n",
+        "stackTrace": null,
+        "lineNumber": 4,
+        "path": "/Users/rootxrishabh/PasteContainer/db/migrations/V001_20230820175154__rootxrishabh.sql"
+      },
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "pastebinclone",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.21.1",
+      "database": "pastebinclone",
+      "warnings": [
+        "outOfOrder mode is active. Migration of schema \"pastebinclone\" may not be reproducible."
+      ],
+      "timestamp": "2023-08-21T00:55:39.485155",
+      "operation": "migrate",
+      "exception": "Migration V001_20230820175154__rootxrishabh.sql failed\n------------------------------------------------------\nSQL State  : 42883\nError Code : 0\nMessage    : ERROR: function uuid_generate_v4() does not exist\n  Hint: No function matches the given name and argument types. You might need to add explicit type casts.\n  Position: 49\nLocation   : migrations/V001_20230820175154__rootxrishabh.sql (/Users/rootxrishabh/PasteContainer/db/migrations/V001_20230820175154__rootxrishabh.sql)\nLine       : 4\nStatement  : CREATE TABLE Pastes (\n\tid uuid NOT NULL DEFAULT uuid_generate_v4(),\n\tcreated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,\n\tupdated_at TIMESTAMP DEFAULT NULL,\n\tdeleted_at TIMESTAMP DEFAULT NULL,\n\tbody VARCHAR,\n\tname VARCHAR(20),\n\tPRIMARY KEY (id)\n)\n",
+      "licenseFailed": false
+    }
+  ]
+}

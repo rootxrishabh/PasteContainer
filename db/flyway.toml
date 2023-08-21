@@ -1,0 +1,17 @@
+databaseType = "PostgreSql"
+name = "db"
+id = "d6a01233-4287-419d-ab0a-5d3bb0fd62ee"
+
+[flywayDesktop]
+developmentEnvironment = "development"
+shadowEnvironment = "shadow"
+schemaModel = "./schema-model"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[flyway]
+mixed = true
+outOfOrder = true
+locations = [ "filesystem:migrations" ]
+validateMigrationNaming = true
