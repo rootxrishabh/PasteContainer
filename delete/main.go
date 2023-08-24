@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/rootxrishabh/PasteContainer/create/router"
-	"github.com/rootxrishabh/PasteContainer/pkg/common/utils"
 	_ "github.com/lib/pq"
+	"github.com/rootxrishabh/PasteContainer/delete/router"
+	"github.com/rootxrishabh/PasteContainer/pkg/common/utils"
 )
 
 func main(){
